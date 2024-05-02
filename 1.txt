@@ -1,0 +1,25 @@
+TypeScliptとは？
+・Microsoft社が開発しているオープンソースのプログラミング言語
+・JavaScriptを代替することを目指した言語
+・JavaSclipt同様に幅広い用途に使える
+
+補足：JavaScliptとは？
+・Webサイトの９８％で使われている。
+・ウェブブラウザ上で動作する（ほぼ）唯一の、プログラミング言語。
+
+タイプスクリプトの特徴
+・Javaスクリプトに型（データ型）を付けられるようにした、プログラミング言語
+
+・TypeSclipt 
+const str:string ='Hello World!';
+
+・Javascript
+const str ='Hello World!';
+
+
+コンパイルとは
+→タイプスクリプトのコードをJavascriptのコードに変換すること。
+
+
+
+
