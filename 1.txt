@@ -12,6 +12,7 @@ TypeScliptとは？
 
 ・TypeSclipt 
 const str:string ='Hello World!';
+typescriptのTypeは「型」を意味する
 
 ・Javascript
 const str ='Hello World!';
@@ -19,6 +20,10 @@ const str ='Hello World!';
 
 コンパイルとは
 →タイプスクリプトのコードをJavascriptのコードに変換すること。
+
+変数とは
+→・何かしらの値を入れておくための入れ物
+ ・入れ物には変数名という名前を付けられる　
 
 
 
