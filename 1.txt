@@ -60,3 +60,7 @@ const str ='Hello World!';
 enterキーを押すとwatchモードでコンパイルが起動する
 watchモードを終了するには、
 ①ターミナルにフォーカスを当てて、[controle + c]
+
+コンパイルとページリロードのやり方
+url:https://www.udemy.com/course/typescript-programming-for-beginners/learn/lecture/33717456#overview
+授業番号　29
