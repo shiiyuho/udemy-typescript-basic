@@ -36,4 +36,8 @@ const str ='Hello World!';
 ・number型・・・数値型　（123456,3.14）
 ・boolean型・・・論理型　（true,false）
 
+型推論とは？
+・データ型が明らかな場合には、データ型の指定を省略してよい
+・TypeScriptが変数の型を自動的に判断
+
 
