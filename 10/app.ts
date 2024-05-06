@@ -1,4 +1,4 @@
-console.log('Hello World');
+console.log('Hello Wold!');
 
-const str: string = 'Hello!';
-console.log(str);
+const str: string = 'Hello';
+console.log(str)
