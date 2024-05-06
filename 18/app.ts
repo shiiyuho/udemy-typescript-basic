@@ -14,3 +14,6 @@ let foo ='small';
 let Foo ='big';
 console.log(foo);
 console.log(Foo);
+
+//予約語
+// let const ='abc'; //変数の宣言はこの場所ではできない「const」にできない
