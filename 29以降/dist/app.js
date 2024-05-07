@@ -1,13 +1,43 @@
 "use strict";
-//例題）2の倍数かつ、3の倍数の時に、メッセージを表示する。
-// const num =6;
-// if(num % 2 ===0){  //num÷2の余りが0
-//     if(num % 3 === 0){  //num÷３の余りも0
-//         console.log(`${num}は2の倍数、かつ3の倍数です。`);
-//     }
+//Switc文
+// let num=6;
+// switch(num){
+//     case 1:
+//         console.log('Gold');
+//         break;
+//     case 2:
+//         console.log('Silver');
+//         break;
+//     case 3:
+//         console.log('Bronze');
+//         break;
+//     case 4:
+//         console.log('4th');
+//         break;
+//     case 5:
+//         console.log('5th');
+//         break;
+//     default:
+//         console.log('Other');
+//         break;
 // }
-//上の論理演算子の条件分岐を省略した書き方
-const num = 6;
-if ((num % 2 === 0) && (num % 3 === 0)) {
-    console.log(`${num}は2の倍数、かつ3の倍数です。`);
+//上のSwith文をIf文に書き換えた場合
+let num = 1;
+if (num === 1) {
+    console.log('Gold');
+}
+else if (num === 2) {
+    console.log('Silver');
+}
+else if (num === 3) {
+    console.log('Bronze');
+}
+else if (num === 4) {
+    console.log('4th');
+}
+else if (num === 5) {
+    console.log('5th');
+}
+else {
+    console.log('Other');
 }
