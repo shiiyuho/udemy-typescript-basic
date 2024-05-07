@@ -1,11 +1,27 @@
 "use strict";
-for (let i = 1; i <= 3; i++) { //初期化式
-    console.log(i);
+//入れ子を使ったfor文について
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(`i:${i},j:${j}`);
+    }
 }
-const colors = ['red', 'blue', 'green'];
-// for(let i=0; i<3; i++){
-//     console.log(colors[i]);
-// }
-for (let i = 0; i < colors.length; i++) {
-    console.log(colors[i]);
+const scores = [
+    [100, 99, 98],
+    [90, 89, 88],
+    [80, 79, 78]
+];
+// console.log(scores[0][0]);
+// console.log(scores[0][1]);
+// console.log(scores[0][2]);
+// console.log(scores[1][0]);
+// console.log(scores[1][1]);
+// console.log(scores[1][2]);
+// console.log(scores[2][0]);
+// console.log(scores[2][1]);
+// console.log(scores[2][2]);
+//数が多い時の出力（入れ子を使ったfor文）
+for (let i = 0; i < scores.length; i++) {
+    for (let j = 0; j < scores[i].length; j++) {
+        console.log(scores[i][j]);
+    }
 }
