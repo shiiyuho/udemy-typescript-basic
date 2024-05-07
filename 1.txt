@@ -64,3 +64,9 @@ watchモードを終了するには、
 コンパイルとページリロードのやり方
 url:https://www.udemy.com/course/typescript-programming-for-beginners/learn/lecture/33717456#overview
 授業番号　29
+
+ソースマップとは？
+やり方
+①「tsconfig.json」を開く
+②「Ctrl+c」で検索エンジンを開き「sourceMap」と検索
+③コメントを外し、litserver起動「npm run start」
