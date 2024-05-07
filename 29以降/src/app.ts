@@ -1,15 +1,10 @@
-// const getRectang =function(height:number,width:number):number{
-//     return height*width;
-// }
-// console.log(getRectang(3,5));
+//例題 「みかんの値段を計算するプログラム」
+// Aさんが1個100円のみかんを20個買いました。
+// ①みかんの単価と個数を関数の引数に渡すと、合計金額を計算してけえす関数を作成
+// ②作成した関数を呼び出して、Aさんの支払金額がいくらになるかを計算してコンソールに出力する。
+// ③アロー関数を使用せよ。
 
-//上の関数リテラルをアロー関数に書き換えてすっきりさせる書き方
-const getRectangle=(height:number,width:number):number=>{
-    return height*width;
-}
-
-console.log(getRectangle(3,5));
-
-//中括弧内が1文の場合は下のように省略できる
-const getRectang=(height:number, width:number) => height * width;
-console.log(getRectang(3,5));
+const kaikei=(mikan:number,x:number)=>{
+   return mikan*x;
+};
+console.log(kaikei(20,100));
