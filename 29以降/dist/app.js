@@ -1,8 +1,6 @@
 "use strict";
-//タイマー処理
-//3秒たったら、コンソールに「Timeout!」と表示させる
-const diplayMessege = () => {
-    console.log('Timeout!');
+//デフォルト値
+const getRectangle = (height, width = 10) => {
+    return height * width; //デフォルト値（右にしかつけられない）
 };
-setTimeout(diplayMessege, 3000);
-//            関数　　　  mm/秒
+console.log(getRectangle(3, 5));
