@@ -1,10 +1,7 @@
-//例題 「みかんの値段を計算するプログラム」
-// Aさんが1個100円のみかんを20個買いました。
-// ①みかんの単価と個数を関数の引数に渡すと、合計金額を計算してけえす関数を作成
-// ②作成した関数を呼び出して、Aさんの支払金額がいくらになるかを計算してコンソールに出力する。
-// ③アロー関数を使用せよ。
-
-const kaikei=(mikan:number,x:number)=>{
-   return mikan*x;
-};
-console.log(kaikei(20,100));
+//タイマー処理
+//3秒たったら、コンソールに「Timeout!」と表示させる
+const diplayMessege = ()=>{
+    console.log('Timeout!');
+}
+setTimeout(diplayMessege,3000);
+//            関数　　　  mm/秒
