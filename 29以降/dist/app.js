@@ -1,10 +1,12 @@
 "use strict";
-const colors = ['red', 'green', 'blue'];
-for (const color of colors) { //要素を一つづつ呼び出し
-    console.log(color);
+//スコアの平均を求める
+const score = [100, 90, 80, 70, 60];
+// console.log(score);
+let sum = 0;
+for (let i = 0; i < score.length; i++) {
+    sum += score[i];
 }
-//文字列の場合
-const str = 'TypSclipt';
-for (const character of str) {
-    console.log(character);
-}
+//平均値を求める
+const average = sum / score.length;
+console.log(`sum:${sum}`);
+console.log(`average:${average}`);
