@@ -1,31 +1,18 @@
 "use strict";
-//以上
-const a = 100;
-if (a >= 100) {
-    console.log('100以上');
+//練習問題
+//Aさんの体重は６０Kg、身長は！1.7Mです
+//AさんのBMIを計算
+const height = 1.7;
+const weight = 60;
+const BMI = weight / (height * height);
+console.log(BMI);
+if (BMI >= 25) {
+    console.log('肥満');
 }
-//より大きい
-const b = 101;
-if (b > 100) {
-    console.log('100より大きい');
+else if (BMI >= 18.5) {
+    console.log('普通');
 }
-//以下
-const c = 99;
-if (c <= 100) {
-    console.log('100以下');
+else if (BMI <= 18.5) {
+    console.log('痩せ');
 }
-//未満
-const d = 99;
-if (d < 100) {
-    console.log('100未満');
-}
-//等しい
-const e = 100;
-if (e === 100) {
-    console.log('等しい');
-}
-//等しくない
-let f = 111;
-if (f !== 100) {
-    console.log('等しくない');
-}
+else { }
