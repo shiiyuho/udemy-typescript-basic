@@ -1,8 +1,4 @@
-//function命令
-function rectangle(height:number,width:number):number{ //値に型を指定する書き方
-       //関数名     引数１:型     引数２:型
-    return height*width; //型推論「number型」
-            //戻り値
+const getRectang =function(height:number,width:number):number{
+    return height*width;
 }
-
-console.log(rectangle(3,5));
+console.log(getRectang(3,5));
