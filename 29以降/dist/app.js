@@ -1,36 +1,41 @@
 "use strict";
-const colors = ['Red', 'Green', 'Blue'];
-console.log(colors);
-//配列に新たな値を入れるやり方
-colors.push('black');
-console.log(colors);
-//先頭に追加
-colors.unshift('white');
-console.log(colors);
-//[Red]を赤に書き換える
-colors[1] = 'Aka';
-console.log(colors);
-//指定した位置に一つ以上を挿入
-const insertArr = ['a', 'b', 'c'];
-insertArr.splice(1, 0, 'd');
-insertArr.splice(2, 0, 'x', 'y', 'z');
-console.log(insertArr);
-//インデックス２から二つ削除
-insertArr.splice(2, 2);
-console.log(insertArr);
-//結合
-const arr1 = ['a', 'b', 'c'];
-const arr2 = ['e', 'f', 'g'];
-const mergedArr = arr1.concat(arr2);
-console.log(mergedArr);
-//先頭削除
-const arr3 = ['a', 'b', 'c'];
-arr3.shift();
-console.log(arr3);
-//末尾を削除
-arr3.pop();
-console.log(arr3);
-//スプレッド構文(配列を追加)
-const arr4 = ['1', '2', '3'];
-const arr5 = ['4', '5', '6', ...arr4];
-console.log(arr5);
+//オブジェクト
+const user = {
+    name: 'Yuho Ishii',
+    gender: 'man',
+    age: 20
+};
+//ドット記法での出力
+console.log(user.name);
+console.log(user.gender);
+console.log(user.age);
+//ブラケット記法での出力
+console.log(user['name']);
+console.log(user['gender']);
+console.log(user['age']);
+//プロパティ内の値を書き換えたいとき(ドット版とブラケット版)
+user.age = 22;
+console.log(user.age);
+user['age'] = 23;
+console.log(user['age']);
+//プロパティの個数を求めるには
+console.log(Object.keys(user).length);
+//キーの一覧を習得するには？
+console.log(Object.keys(user));
+//型を指定する書き方
+const user2 = {
+    name: 'Ishii',
+    gender: 'man',
+    age: 20
+};
+console.log(user2.name);
+console.log(user2.gender);
+console.log(user2.age);
+const user3 = {
+    name: 'Ishii',
+    gender: 'man',
+    age: 20
+};
+console.log(user2.name);
+console.log(user2.gender);
+console.log(user2.age);
