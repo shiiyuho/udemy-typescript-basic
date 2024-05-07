@@ -2,7 +2,7 @@
   "name": "29",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "second.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
@@ -10,6 +10,6 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "lite-server": "^2.6.1" 
+    "lite-server": "^2.6.1"
   }
 }
