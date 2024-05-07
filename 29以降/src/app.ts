@@ -1,9 +1,11 @@
-const temperature =28;
+const x = 59;
 
-if (temperature > 28){
-    console.log('ON');
+if(x>=90){
+    console.log('A');
+}else if(x>=80){
+    console.log('B');
+}else if(x>=60){
+    console.log('C');
 }else{
-    console.log('OFF')
+    console.log('D');
 }
-console.log(29>28);
-console.log(29<28);
