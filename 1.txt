@@ -70,3 +70,8 @@ url:https://www.udemy.com/course/typescript-programming-for-beginners/learn/lect
 ①「tsconfig.json」を開く
 ②「Ctrl+c」で検索エンジンを開き「sourceMap」と検索
 ③コメントを外し、litserver起動「npm run start」
+
+論理演算子
+・＆＆・・・AND
+・｜｜・・・OR
+・！・・・NOT

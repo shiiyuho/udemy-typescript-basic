@@ -1,17 +1,21 @@
-//練習問題
-//Aさんの体重は６０Kg、身長は！1.7Mです
+//&& ~AND~という意味
+console.log(true&&true);
+console.log(true&&false);
+console.log(false&&true);
+console.log(false&&false);
 
-//AさんのBMIを計算
-const height = 1.7;
-const weight = 60;
+//|| ~OR~
+console.log(true||true);
+console.log(true||false);
+console.log(false||true);
+console.log(false||false);
 
-const BMI =weight/(height*height);
-console.log(BMI);
+//! ~NOT~
+console.log(!true);
+console.log(!false);
 
-if(BMI>=25){
-    console.log('肥満');
-}else if(BMI>=18.5){
-    console.log('普通');
-}else if(BMI<=18.5){
-    console.log('痩せ');
-}else{}
+//! && ||
+console.log(false && true||true);
+console.log(false&&(true||true));
+
+
