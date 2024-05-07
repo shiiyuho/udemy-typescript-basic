@@ -1,22 +1,36 @@
 "use strict";
-//配列
 const colors = ['Red', 'Green', 'Blue'];
 console.log(colors);
-// const num : string[]=[1,2,3];//型が違うからerror
-//型を書かない書き方（型推論）
-const iro = ['Red', 'Green', 'Blue']; //型が明らかな場合は書かなくてよい
+//配列に新たな値を入れるやり方
+colors.push('black');
 console.log(colors);
-//型がバラバラな場合の配列
-const mixdArr = ['abc', 1, true, false];
-console.log(mixdArr);
-//配列から値を取り出すときの書き方
-console.log(colors[0]);
-console.log(colors[1]);
-console.log(colors[2]);
-//配列の数の要素を取得する書き方
-console.log(colors.length);
-//末尾の配列の値を取得する書き方
-console.log(colors[colors.length - 1]);
-//空の配列を宣言するには
-const emptyArr = [];
-console.log(emptyArr);
+//先頭に追加
+colors.unshift('white');
+console.log(colors);
+//[Red]を赤に書き換える
+colors[1] = 'Aka';
+console.log(colors);
+//指定した位置に一つ以上を挿入
+const insertArr = ['a', 'b', 'c'];
+insertArr.splice(1, 0, 'd');
+insertArr.splice(2, 0, 'x', 'y', 'z');
+console.log(insertArr);
+//インデックス２から二つ削除
+insertArr.splice(2, 2);
+console.log(insertArr);
+//結合
+const arr1 = ['a', 'b', 'c'];
+const arr2 = ['e', 'f', 'g'];
+const mergedArr = arr1.concat(arr2);
+console.log(mergedArr);
+//先頭削除
+const arr3 = ['a', 'b', 'c'];
+arr3.shift();
+console.log(arr3);
+//末尾を削除
+arr3.pop();
+console.log(arr3);
+//スプレッド構文(配列を追加)
+const arr4 = ['1', '2', '3'];
+const arr5 = ['4', '5', '6', ...arr4];
+console.log(arr5);
