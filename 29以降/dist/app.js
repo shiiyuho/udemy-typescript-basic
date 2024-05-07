@@ -1,17 +1,13 @@
 "use strict";
-//&& ~AND~という意味
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
-//|| ~OR~
-console.log(true || true);
-console.log(true || false);
-console.log(false || true);
-console.log(false || false);
-//! ~NOT~
-console.log(!true);
-console.log(!false);
-//! && ||
-console.log(false && true || true);
-console.log(false && (true || true));
+//例題）2の倍数かつ、3の倍数の時に、メッセージを表示する。
+// const num =6;
+// if(num % 2 ===0){  //num÷2の余りが0
+//     if(num % 3 === 0){  //num÷３の余りも0
+//         console.log(`${num}は2の倍数、かつ3の倍数です。`);
+//     }
+// }
+//上の論理演算子の条件分岐を省略した書き方
+const num = 6;
+if ((num % 2 === 0) && (num % 3 === 0)) {
+    console.log(`${num}は2の倍数、かつ3の倍数です。`);
+}
