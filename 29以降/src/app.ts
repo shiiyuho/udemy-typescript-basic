@@ -1,7 +1,12 @@
-//タプル
-let user:[string,number,string]=['Liam',20,'Tokyou'];
-console.log(user[0]);
-console.log(user[1]);
-console.log(user[2]);
+for(let i=1;i<=3;i++){  //初期化式
+    console.log(i);
+}
 
-user=['Olvia',21,'Osaka'];//要素の個数や、型が違うと書き換えできない。
+const colors = ['red','blue','green'];
+// for(let i=0; i<3; i++){
+//     console.log(colors[i]);
+// }
+
+for(let i=0; i<colors.length; i++){
+    console.log(colors[i]);
+}

@@ -1,7 +1,11 @@
 "use strict";
-//タプル
-let user = ['Liam', 20, 'Tokyou'];
-console.log(user[0]);
-console.log(user[1]);
-console.log(user[2]);
-user = ['Olvia', 21, 'Osaka']; //要素の個数や、型が違うと書き換えできない。
+for (let i = 1; i <= 3; i++) { //初期化式
+    console.log(i);
+}
+const colors = ['red', 'blue', 'green'];
+// for(let i=0; i<3; i++){
+//     console.log(colors[i]);
+// }
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+}
