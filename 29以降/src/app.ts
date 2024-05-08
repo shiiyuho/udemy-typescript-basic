@@ -1,4 +1,4 @@
-//アクセシビリティ修飾子
+//
 class User{
     name:string='';
     private age:number=0;  //同じプロパティ内でしかアクセスできない
@@ -13,8 +13,5 @@ class User{
   }
 }
 
-//インスタンス
-const olivia =new User('oriva',23);
-console.log(olivia.name);
-// console.log(olivia.age); できない
-console.log(olivia.isAdult());//こっちならできる
+const olivia=new User('olivia',23);
+const liam:User=new User('liam',25);//型注釈をする場合

@@ -1,5 +1,5 @@
 "use strict";
-//アクセシビリティ修飾子
+//
 class User {
     name = '';
     age = 0; //同じプロパティ内でしかアクセスできない
@@ -11,8 +11,5 @@ class User {
         return this.age >= 18; //ageにアクセスできる
     }
 }
-//インスタンス
-const olivia = new User('oriva', 23);
-console.log(olivia.name);
-// console.log(olivia.age); できない
-console.log(olivia.isAdult()); //こっちならできる
+const olivia = new User('olivia', 23);
+const liam = new User('liam', 25); //型注釈をする場合
