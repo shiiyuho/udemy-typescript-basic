@@ -1,15 +1,13 @@
-//クラス宣言
+//オプショナルプロパティ
 class User{
-    name: string='';
+    name?:string;  //オプショナルなプロパティとなる
     age:number=0;
 }
-//クラスのインスタンス化
+
 const olivia = new User();
 console.log(olivia.name);
 console.log(olivia.age);
 
-olivia.name='olivia';
-olivia.age=23;
-
+//値の挿入
+olivia.name='ishii';
 console.log(olivia.name);
-console.log(olivia.age);
