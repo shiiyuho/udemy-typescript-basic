@@ -139,3 +139,9 @@ iterableオブジェクト・・・反復可能オブジェクト(配列や文�
 
 オーバーライド
 ・子クラスが、親クラスの機能をオーバーライド（上書き）すること。
+
+インポート文、エクスポート文
+使うときの手順
+①「tsconfig.json」を開き、「"module": "commonjs",」をコメントアウト
+②index.htmlを開き、「<script type="module" src="dist/app.js"></script>」に変更
+これでインポート文、エクスポート文が使える
