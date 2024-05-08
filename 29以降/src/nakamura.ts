@@ -1,4 +1,8 @@
-//エクスポート 省略版（排出）
- const name='Nakamura';
- const age=20;
- export{name as myname,age};
+//関数エクスポート（排出）
+export const getNakamuraName=()=>{
+    return 'yuta Nakamura';
+};
+
+export function getIshiiName(){
+    return 'Yuho Ishii';
+}
