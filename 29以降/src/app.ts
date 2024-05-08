@@ -1,7 +1,7 @@
-//コンストラクタ
+//アクセシビリティ修飾子
 class User{
     name:string='';
-    age:number=0;
+    private age:number=0;  //同じプロパティ内でしかアクセスできない
 
     constructor(name:string,age:number){
         this.name =name;                 //コンストラクタは「readonry」にも代入できる
@@ -9,12 +9,12 @@ class User{
     }
 
     isAdult():boolean{
-        return this.age >=18;
+        return this.age >=18;   //ageにアクセスできる
   }
 }
 
 //インスタンス
-const olivia=new User('orivia',23);
+const olivia =new User('oriva',23);
 console.log(olivia.name);
-console.log(olivia.age);
-console.log(olivia.isAdult());
+// console.log(olivia.age); できない
+console.log(olivia.isAdult());//こっちならできる
