@@ -1,4 +1,4 @@
-//関数エクスポート（排出）
+//クラスのエクスポート（排出）
 export const getNakamuraName = () => {
     return 'yuta Nakamura';
 };
