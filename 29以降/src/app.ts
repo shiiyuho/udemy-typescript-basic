@@ -1,27 +1,20 @@
-//メソッド
+//コンストラクタ
 class User{
     name:string='';
     age:number=0;
 
-    isAdult():boolean{
-        return this.age>=18;    //Userの値が18以上なら「true」、以下なら「false」と出力される
+    constructor(name:string,age:number){
+        this.name =name;                 //コンストラクタは「readonry」にも代入できる
+        this.age=age;
     }
 
-    setAge(age:number){
-        this.age=age;   //thisは自分を表す
-    }
+    isAdult():boolean{
+        return this.age >=18;
+  }
 }
 
-const olivia=new User();
+//インスタンス
+const olivia=new User('orivia',23);
+console.log(olivia.name);
 console.log(olivia.age);
 console.log(olivia.isAdult());
-
-olivia.setAge(23);
-console.log(olivia.age);
-console.log(olivia.isAdult());
-
-//2つ目のインスタンス
-const liam=new User();
-liam.setAge(18);
-console.log(liam.age);
-console.log(liam.isAdult());
