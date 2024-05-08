@@ -1,12 +1,30 @@
 "use strict";
-//スコアの平均を求める
-const score = [100, 90, 80, 70, 60];
-// console.log(score);
-let sum = 0;
-for (let i = 0; i < score.length; i++) {
-    sum += score[i];
+//コンストラクタのオーバーライド
+class User {
+    name = '';
+    age = 0;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    isAdult() {
+        return this.age >= 18;
+    }
 }
-//平均値を求める
-const average = sum / score.length;
-console.log(`sum:${sum}`);
-console.log(`average:${average}`);
+class AdminUser extends User {
+    adminRole = 1;
+    constructor(name, age, adminRole) {
+        super(name, age);
+        this.adminRole = adminRole;
+    }
+    sayAdminRole() {
+        console.log(`My adminRole is ${this.adminRole}`);
+    }
+    isAdult() {
+        return true;
+    }
+}
+const emma = new AdminUser('emma', 0, 2); //ここも変更「2」を追加してる
+console.log(emma.name);
+emma.sayAdminRole();
+console.log(emma.isAdult());
