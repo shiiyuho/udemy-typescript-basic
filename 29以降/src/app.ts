@@ -1,4 +1,4 @@
-//
+//クラスの継承
 class User{
     name:string='';
     private age:number=0;  //同じプロパティ内でしかアクセスできない
@@ -13,5 +13,15 @@ class User{
   }
 }
 
-const olivia=new User('olivia',23);
-const liam:User=new User('liam',25);//型注釈をする場合
+class AdminUser extends User{ //「extends」で継承したクラスを作る
+       adminRole:number=1;
+
+       public sayAdminRole(){
+        console.log(`My adminRole is ${this.adminRole}`)
+       }
+}
+const emma=new AdminUser('Emma',16);
+console.log(emma.name);
+console.log(emma.isAdult());
+
+emma.sayAdminRole();
