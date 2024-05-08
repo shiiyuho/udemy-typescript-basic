@@ -1,5 +1,5 @@
 "use strict";
-//オーバーライド
+//コンストラクタのオーバーライド
 class User {
     name = '';
     age = 0;
@@ -13,12 +13,18 @@ class User {
 }
 class AdminUser extends User {
     adminRole = 1;
+    constructor(name, age, adminRole) {
+        super(name, age);
+        this.adminRole = adminRole;
+    }
     sayAdminRole() {
         console.log(`My adminRole is ${this.adminRole}`);
     }
     isAdult() {
-        return true; //ユーザークラスの「isAudult」をオーバーライドしている
+        return true;
     }
 }
-const emma = new AdminUser('emma', 0);
+const emma = new AdminUser('emma', 0, 2); //ここも変更「2」を追加してる
+console.log(emma.name);
+emma.sayAdminRole();
 console.log(emma.isAdult());
