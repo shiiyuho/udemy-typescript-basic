@@ -1,14 +1,14 @@
 "use strict";
-//クラスの継承
+//オーバーライド
 class User {
     name = '';
-    age = 0; //同じプロパティ内でしかアクセスできない
+    age = 0;
     constructor(name, age) {
-        this.name = name; //コンストラクタは「readonry」にも代入できる
+        this.name = name;
         this.age = age;
     }
     isAdult() {
-        return this.age >= 18; //ageにアクセスできる
+        return this.age >= 18;
     }
 }
 class AdminUser extends User {
@@ -16,8 +16,9 @@ class AdminUser extends User {
     sayAdminRole() {
         console.log(`My adminRole is ${this.adminRole}`);
     }
+    isAdult() {
+        return true; //ユーザークラスの「isAudult」をオーバーライドしている
+    }
 }
-const emma = new AdminUser('Emma', 16);
-console.log(emma.name);
+const emma = new AdminUser('emma', 0);
 console.log(emma.isAdult());
-emma.sayAdminRole();
