@@ -1,13 +1,5 @@
-//オプショナルプロパティ
+//プロパティを読み取り専用に
 class User{
-    name?:string;  //オプショナルなプロパティとなる
+    readonly name:string='ishii'; //「readonly」を使うと読み取り専用になる
     age:number=0;
 }
-
-const olivia = new User();
-console.log(olivia.name);
-console.log(olivia.age);
-
-//値の挿入
-olivia.name='ishii';
-console.log(olivia.name);
